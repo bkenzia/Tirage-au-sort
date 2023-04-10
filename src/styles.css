@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: inherit;
+  color: inherit;
+  font: inherit;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+:root {
+  --bg-color: #ce0033;
+}
+body {
+  background: #f0f0f0;
+}

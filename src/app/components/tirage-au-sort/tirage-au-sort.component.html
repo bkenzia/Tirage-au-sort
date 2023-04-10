@@ -1,0 +1,13 @@
+<div class="container">
+  <button (click)="sort()">🎰 Sélectionner une personne 🎰</button>
+  <div class="tirage-result">
+    <p *ngIf="!isSelected">Personne n’a été sélectionné actuellement 👀</p>
+    <div class="gagnant" *ngIf="isSelected">
+      <h2>{{ elevesPresent[indexEleveSort].name }}</h2>
+      <p>
+        Tu es la grande gagnant
+        <span *ngIf="elevesPresent[indexEleveSort].genre == 'femme'">e</span> !
+      </p>
+    </div>
+  </div>
+</div>

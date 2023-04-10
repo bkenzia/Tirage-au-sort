@@ -1,0 +1,21 @@
+<div class="container">
+  <div>
+    <p>Ajouter un.e absent.e</p>
+  </div>
+  <div>
+    <p>Liste des absents</p>
+    <ul *ngFor="let personne of personnesAbsentHomme">
+      <li>
+        <p>{{ personne.name }}</p>
+        <button (click)="removeAbsentPerson(personne.name)">x</button>
+      </li>
+    </ul>
+    <p>Liste des absentes</p>
+    <ul *ngFor="let personne of personnesAbsentFemme">
+      <li>
+        <p>{{ personne.name }}</p>
+        <button (click)="removeAbsentPerson(personne.name)">x</button>
+      </li>
+    </ul>
+  </div>
+</div>
